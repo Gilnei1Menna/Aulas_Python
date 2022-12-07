@@ -1,8 +1,8 @@
 maior = 0
 menor = 0
 for c in range(7):
-    n = int(input('Digte o ano de nascimento: '))
-    if 2022 - n >= 21:
+    n = int(input(f'Digte o ano de nascimento da {c+1}° pessoa: '))
+    if 2022 - n >= 18:
         maior += 1
     else:
         menor += 1
