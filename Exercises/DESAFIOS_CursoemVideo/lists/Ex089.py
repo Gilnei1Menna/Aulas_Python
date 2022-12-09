@@ -1,7 +1,9 @@
-lista_comp = [[], [[], []]]
-# print(lista_comp[1][0])
-nome = str(input('Digite o nome do aluno: '))
-lista_comp[0].insert(0, nome)
-lista_comp[1][0].append(int(input('Digite a primeira nota: ')))
-lista_comp[1][1].append(int(input('Digite a segunda nota: ')))
-print(lista_comp)
+lista = list()
+
+nome = str(input('Nome: '))
+nota1 = float(input('Nota 1: '))
+nota2 = float(input('Nota 2: '))
+media = (nota1 + nota2) / 2
+lista.append([nome, [nota1, nota2], media])
+
+print(lista)
